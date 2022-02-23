@@ -2,6 +2,9 @@
 #include <TFT_eSPI.h>
 #include <SPI.h>
 
+
+//imma built a fricking air bag controller
+
 void setup() {
   // put your setup code here, to run once:
 }
