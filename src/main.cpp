@@ -4,11 +4,17 @@
 
 
 //imma built a fricking air bag controller
+const byte PressureInputPin = 32;
+int Pressure = 0 ;
+
 
 void setup() {
-  // put your setup code here, to run once:
+  Serial.begin (115200);
+  pinMode(PressureInputPin, INPUT);
+
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  Pressure = analogRead(PressureInputPin);
+  Serial.println (Pressure);
 }
